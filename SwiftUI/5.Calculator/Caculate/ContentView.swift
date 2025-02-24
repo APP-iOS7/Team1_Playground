@@ -19,6 +19,8 @@ struct ContentView: View {
                     Text(text)
                         .font(.system(size: 80))
                         .foregroundStyle(.white)
+                        .padding(.trailing, 10)
+                        .padding(.bottom, -15)
                 }
                 Grid(horizontalSpacing: 10, verticalSpacing: 10) {
                     GridRow {
@@ -46,7 +48,6 @@ struct ContentView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .padding(30)
-                                
                             }
                         Circle()
                             .fill(.orange)
@@ -222,9 +223,7 @@ struct ContentView: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .padding(.leading, 10)
-            .padding(.trailing, 10)
-            .padding(.bottom, 50)
+            .padding(.bottom, 30)
             .background(Color.black)
             .ignoresSafeArea()
         }
