@@ -69,7 +69,6 @@ struct ContentView: View {
             .padding(.bottom, 80)
             .frame(maxWidth: .infinity)
         }
-        
     }
     
     private var alarmView: some View {
